@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            margin-bottom: 4px;
+        }
+        select {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Contact Us</h1>
+        <p>Use the following form to end a message to Example Cafe</p>
+        <div class="container">
+            <label for="txtEmail">Your Email</label>
+            <input type="text" name="txtEmail">
+        </div>
+        <div class="container">
+            <label for="txtMessage" style="width: 73.5px;">Message</label>
+            <textarea name="txtMessage" cols="30" rows="10"></textarea>
+        </div>
+        <label for="txtList" style="width: 169.5px; display: inline-block;">How did you hear of us?</label>
+        <select name="txtList">
+            <option value="Google">Google</option>
+        </select>
+        <br>
+        <label for="txtLetter"style="width: 165.5px; display: inline-block;">Newsletter</label>
+        <input type="checkbox" name="txtLetter">
+        <span>Ensure this box is checked if you would like to receive email updates</span>
+        <br>
+        <button type="submit">Send message</button>
+    </form>
+</body>
+</html>
