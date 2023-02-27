@@ -6,52 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        form {
-            width: 400px;
+        form{
+            margin: auto;
+            margin-top: 100px;
+            width: 600px;
+            height: 500px;
+            box-shadow: 2px 2px 6px 6px #ccc;
         }
+
     </style>
 </head>
 <body>
     <form action="">
         <h1>Contact Us</h1>
         <fieldset>
-            <legend>Your message:</legend>
+            <legend>Your message</legend>
             <table>
                 <tr>
-                    <td>
-                        <label for="emailTo">To</label>
-                    </td>
-                    <td>
-                        <input type="text" name="txtTo" readonly="readonly" id="emailTo" size="20" value="Example Cafe">
-                    </td>
+                    <td><label for="emailTo">To</label></td>
+                    <td><input type="text" name="txtTo" readonly="readonly" id="emailTo" size="20" value="Example Cafe"></td>
                 </tr>
+                    
                 <tr>
-                    <td>
-                        <label for="emailForm">Your email</label>
-                    </td>
-                    <td>
-                        <input type="text" name="txtForm" id="emailForm" size="20" tabindex="1" maxlength="250">
-                    </td>
+                    <td><label for="emailFrom">Your email</label></td>
+                    <td><input type="text" name="txtFrom" id="emailFrom" size="20" tabindex="1" maxlength="250"></td>
                 </tr>
+                    
                 <tr>
                     <td><label for="emailBody">Message</label></td>
                     <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
                 </tr>
             </table>
         </fieldset>
+
         <fieldset>
-            <legend>How you found us:</legend>
-            <label for="txtList" style="width: 169.5px; display: inline-block;">How did you hear of us?</label>
-        <select name="txtList">
-            <option value="Google">Google</option>
-        </select>
-        <br>
-        <label for="txtLetter"style="width: 165.5px; display: inline-block;">Newsletter</label>
-        <input type="checkbox" name="txtLetter">
-        <span>Ensure this box is checked if you would like to receive email updates</span>
-        <br>
+            <legend>How you found us</legend>
+            <p>
+                How did you hear of us
+                <select name="select" id="">
+                    <option value="Google">Google</option>
+                    <option value="Chrome">Chrome</option>
+                    <option value="Yahoo">Yahoo</option>
+                </select>
+            </p>
+
+            <p>
+                Newsletter
+                <input type="checkbox" name="check" id="" style="margin-left: 30px;">
+                Ensure this box is checked of you would like to receive email updates
+            </p>
         </fieldset>
-        <button type="submit">Send message</button>
+
+        <input type="submit" value="Send Message">
+    </form>
+
+    <form action="" style="height: 600px; margin-bottom: 100px;">
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <table>
+                <tr>
+                    <td><label for="FName">First name</label></td>
+                    <td><input type="text" name="txtFname" readonly="readonly" id="FName" size="20" required=""></td>
+                </tr>
+                    
+                <tr>
+                    <td><label for="LName">Last name</label></td>
+                    <td><input type="text" name="txtLname" readonly="readonly" id="LName" size="20" required=""></td>
+                </tr>
+                    
+                <tr>
+                    <td><label for="emailFrom">Your email</label></td>
+                    <td><input type="email" name="txtFrom" id="emailFrom" size="20" tabindex="1" maxlength="250"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Competition Question</legend>
+            <p>How tall is the Eiffel Tower in Paris, France?</p>
+            <input type="radio" name="radioTall" id="rad1">
+            <label for="rad1">584 ft </Br></label>
+            <input type="radio" name="radioTall" id="rad2">
+            <label for="rad2">784 ft </Br></label>
+            <input type="radio" name="radioTall" id="rad3">
+            <label for="rad3">984 ft </Br></label>
+            <input type="radio" name="radioTall" id="rad4">
+            <label for="rad4">1184 ft</label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Tiebreaker Question</legend>
+            <p>In 25 words or less, say why you would like to win $10,1000:</p>
+            <textarea name="txtArea" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Enter competition</legend>
+            <input type="button" value="Enter Competition">
+        </fieldset>
     </form>
 </body>
 </html>
